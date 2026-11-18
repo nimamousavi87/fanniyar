@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090F1C">
+
+  <title>فنی‌یار | مرجع عیب‌یابی لوازم خانگی</title>
+
+  <meta name="description" content="مرجع رایگان کدهای خطا و عیب‌یابی لوازم خانگی">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-icon">F</div>
+        <div>
+          <h1>فنی‌یار</h1>
+          <p>مرجع عیب‌یابی لوازم خانگی</p>
+        </div>
+      </div>
+      <button class="icon-button" aria-label="تنظیمات">⚙</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <span class="hero-label">SMART TROUBLESHOOTING</span>
+        <h2>عیب‌یابی آسان‌تر از همیشه!</h2>
+        <p>کد خطا یا نام دستگاه خود را جست‌وجو کنید.</p>
+
+        <div class="search-box">
+          <input
+            type="search"
+            id="mainSearch"
+            placeholder="مثلاً E01 یا نام دستگاه..."
+          >
+          <button id="searchBtn" aria-label="جست‌وجو">⌕</button>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="section-heading">
+          <h2>دسته‌بندی دستگاه‌ها</h2>
+          <span>همه دستگاه‌ها</span>
+        </div>
+
+        <div class="category-grid" id="categoryGrid"></div>
+      </section>
+
+      <section class="results" id="results">
+        <div class="section-heading">
+          <h2>جست‌وجو</h2>
+        </div>
+        <div id="searchResults">
+          <p>برای شروع، دستگاه یا کد خطا را جست‌وجو کنید.</p>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="active">⌂<span>خانه</span></button>
+      <button>▦<span>دسته‌بندی</span></button>
+      <button>⌕<span>جست‌وجو</span></button>
+      <button>⚙<span>تنظیمات</span></button>
+    </nav>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
